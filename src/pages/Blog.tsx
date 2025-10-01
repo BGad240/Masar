@@ -1,6 +1,12 @@
 import { Calendar, User, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 interface BlogPost {
@@ -18,7 +24,8 @@ const Blog = () => {
     {
       id: 1,
       title: "كيف تختار تخصصك الجامعي المناسب؟",
-      excerpt: "دليل شامل لمساعدة الطلاب في اختيار التخصص الجامعي الذي يتناسب مع ميولهم وقدراتهم المهنية...",
+      excerpt:
+        "دليل شامل لمساعدة الطلاب في اختيار التخصص الجامعي الذي يتناسب مع ميولهم وقدراتهم المهنية...",
       author: "د. محمد العتيبي",
       date: "2024-01-15",
       category: "التوجيه المهني",
@@ -27,7 +34,8 @@ const Blog = () => {
     {
       id: 2,
       title: "أهم مهارات القرن الحادي والعشرين",
-      excerpt: "تعرف على المهارات الأساسية التي يجب على كل شخص اكتسابها للنجاح في سوق العمل المستقبلي...",
+      excerpt:
+        "تعرف على المهارات الأساسية التي يجب على كل شخص اكتسابها للنجاح في سوق العمل المستقبلي...",
       author: "سارة الحربي",
       date: "2024-01-10",
       category: "تطوير المهارات",
@@ -36,7 +44,8 @@ const Blog = () => {
     {
       id: 3,
       title: "مستقبل الذكاء الاصطناعي والوظائف",
-      excerpt: "كيف سيؤثر الذكاء الاصطناعي على سوق العمل وما هي المهن التي ستزدهر في المستقبل...",
+      excerpt:
+        "كيف سيؤثر الذكاء الاصطناعي على سوق العمل وما هي المهن التي ستزدهر في المستقبل...",
       author: "أحمد السلمان",
       date: "2024-01-05",
       category: "التكنولوجيا",
@@ -45,7 +54,8 @@ const Blog = () => {
     {
       id: 4,
       title: "نصائح للنجاح في المقابلات الشخصية",
-      excerpt: "استراتيجيات فعالة للتحضير للمقابلات الوظيفية وترك انطباع إيجابي لدى أصحاب العمل...",
+      excerpt:
+        "استراتيجيات فعالة للتحضير للمقابلات الوظيفية وترك انطباع إيجابي لدى أصحاب العمل...",
       author: "فاطمة القحطاني",
       date: "2024-01-01",
       category: "البحث عن عمل",
@@ -54,7 +64,8 @@ const Blog = () => {
     {
       id: 5,
       title: "ريادة الأعمال للشباب العربي",
-      excerpt: "كيف تبدأ مشروعك الخاص وتحقق النجاح في عالم ريادة الأعمال المتطور...",
+      excerpt:
+        "كيف تبدأ مشروعك الخاص وتحقق النجاح في عالم ريادة الأعمال المتطور...",
       author: "خالد المطيري",
       date: "2023-12-28",
       category: "ريادة الأعمال",
@@ -63,7 +74,8 @@ const Blog = () => {
     {
       id: 6,
       title: "التخطيط المالي للمهنيين الشباب",
-      excerpt: "أساسيات التخطيط المالي الشخصي والادخار والاستثمار في بداية الحياة المهنية...",
+      excerpt:
+        "أساسيات التخطيط المالي الشخصي والادخار والاستثمار في بداية الحياة المهنية...",
       author: "نورة الدوسري",
       date: "2023-12-25",
       category: "التطوير الشخصي",
@@ -71,7 +83,15 @@ const Blog = () => {
     },
   ];
 
-  const categories = ["الكل", "التوجيه المهني", "تطوير المهارات", "التكنولوجيا", "البحث عن عمل", "ريادة الأعمال", "التطوير الشخصي"];
+  const categories = [
+    "الكل",
+    "التوجيه المهني",
+    "تطوير المهارات",
+    "التكنولوجيا",
+    "البحث عن عمل",
+    "ريادة الأعمال",
+    "التطوير الشخصي",
+  ];
 
   return (
     <div className="min-h-screen pt-20 pb-20">
@@ -81,7 +101,10 @@ const Blog = () => {
           <h1 className="text-5xl font-bold text-white mb-6 animate-fade-in-up">
             المدونة
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p
+            className="text-xl text-white/90 max-w-3xl mx-auto animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             مقالات وموارد قيمة لدعم رحلتك المهنية
           </p>
         </div>
@@ -113,7 +136,9 @@ const Blog = () => {
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-3">
                     <Badge variant="secondary">{post.category}</Badge>
-                    <span className="text-sm text-muted-foreground">{post.readTime}</span>
+                    <span className="text-sm text-muted-foreground">
+                      {post.readTime}
+                    </span>
                   </div>
                   <CardTitle className="text-2xl hover:text-primary transition-colors cursor-pointer">
                     {post.title}
@@ -130,7 +155,9 @@ const Blog = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <Calendar className="h-4 w-4" />
-                      <span>{new Date(post.date).toLocaleDateString("ar-SA")}</span>
+                      <span>
+                        {new Date(post.date).toLocaleDateString("ar-SA")}
+                      </span>
                     </div>
                   </div>
                   <Button variant="link" className="p-0 h-auto text-primary">
@@ -146,30 +173,30 @@ const Blog = () => {
 
       {/* Newsletter Section */}
       <section className="py-20 bg-muted/30">
-  <div className="container mx-auto px-4">
-    <Card className="max-w-2xl mx-auto text-center">
-      <CardContent className="p-8 md:p-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-          اشترك في نشرتنا البريدية
-        </h2>
-        <p className="text-muted-foreground mb-6 text-sm md:text-base">
-          احصل على أحدث المقالات والموارد المهنية مباشرة في بريدك الإلكتروني
-        </p>
+        <div className="container mx-auto px-4">
+          <Card className="max-w-2xl mx-auto text-center">
+            <CardContent className="p-8 md:p-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                اشترك في نشرتنا البريدية
+              </h2>
+              <p className="text-muted-foreground mb-6 text-sm md:text-base">
+                احصل على أحدث المقالات والموارد المهنية مباشرة في بريدك
+                الإلكتروني
+              </p>
 
-        {/* ✅ تعديل هنا */}
-        <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-          <input
-            type="email"
-            placeholder="بريدك الإلكتروني"
-            className="flex-1 px-4 py-2 rounded-md border border-border bg-background text-sm md:text-base"
-          />
-          <Button className="w-full sm:w-auto">اشترك الآن</Button>
+              {/* ✅ تعديل هنا */}
+              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input
+                  type="email"
+                  placeholder="بريدك الإلكتروني"
+                  className="flex-1 px-4 py-2 rounded-md border border-border bg-background text-sm md:text-base"
+                />
+                <Button className="w-full sm:w-auto">اشترك الآن</Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
-      </CardContent>
-    </Card>
-  </div>
-</section>
-
+      </section>
     </div>
   );
 };

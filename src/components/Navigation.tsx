@@ -6,7 +6,7 @@ import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const location = useLocation()
   const navItems = {
     ar: [
       { name: "الرئيسية", path: "/" },

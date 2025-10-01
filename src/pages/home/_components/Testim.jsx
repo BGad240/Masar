@@ -38,7 +38,7 @@ export default function TestimonialsSlider() {
   const testimonial = testimonials[index];
 
   return (
-    <section className="py-20 bg-[#F9FAFB]">
+    <section className="py-5 bg-[#F9FAFB]">
       <div className="container mx-auto px-4 text-center">
         <div className="relative max-w-2xl mx-auto">
           <AnimatePresence mode="wait">

@@ -10,16 +10,16 @@ const Navigation = () => {
   const navItems = {
     ar: [
       { name: "الرئيسية", path: "/" },
-      { name: "من نحن", path: "about" },
-      { name: "خدماتنا", path: "services" },
-      { name: "اختبار المسار", path: "quiz" },
-      { name: "دليل المهن", path: "careers" },
-      { name: "المدونة", path: "blog" },
-      { name: "اتصل بنا", path: "contact" },
+      { name: "من نحن", path: "/about" },
+      { name: "خدماتنا", path: "/services" },
+      { name: "اختبار المسار", path: "/quiz" },
+      { name: "دليل المهن", path: "/careers" },
+      { name: "المدونة", path: "/blog" },
+      { name: "اتصل بنا", path: "/contact" },
     ],
   };
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => location.pathname == path;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border shadow-sm">

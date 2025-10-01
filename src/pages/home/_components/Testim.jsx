@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../../../components/ui/card";
 import { CheckCircle } from "lucide-react";
 
 const testimonials = [
@@ -50,7 +50,7 @@ export default function TestimonialsSlider() {
               transition={{ duration: 0.6 }}
             >
               <Card className="shadow-xl rounded-2xl bg-white border border-gray-100 py-[20px]">
-                <CardContent className="py-[20px] rounded-[60px] flex flex-col items-center">
+                <CardContent className="py-6 rounded-3xl flex flex-col items-center">
                   {/* صورة المستخدم (Avatar) */}
                   <img
                     src={testimonial.img}

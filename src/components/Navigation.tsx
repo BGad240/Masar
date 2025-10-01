@@ -10,12 +10,12 @@ const Navigation = () => {
   const navItems = {
     ar: [
       { name: "الرئيسية", path: "/" },
-      { name: "من نحن", path: "/about" },
-      { name: "خدماتنا", path: "/services" },
-      { name: "اختبار المسار", path: "/quiz" },
-      { name: "دليل المهن", path: "/careers" },
-      { name: "المدونة", path: "/blog" },
-      { name: "اتصل بنا", path: "/contact" },
+      { name: "من نحن", path: "about" },
+      { name: "خدماتنا", path: "services" },
+      { name: "اختبار المسار", path: "quiz" },
+      { name: "دليل المهن", path: "careers" },
+      { name: "المدونة", path: "blog" },
+      { name: "اتصل بنا", path: "contact" },
     ],
   };
 

@@ -1,5 +1,6 @@
 import { Calendar, User, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardContent,
@@ -17,6 +18,7 @@ interface BlogPost {
   date: string;
   category: string;
   readTime: string;
+  path: string;
 }
 
 const Blog = () => {
@@ -30,6 +32,7 @@ const Blog = () => {
       date: "2024-01-15",
       category: "التوجيه المهني",
       readTime: "5 دقائق",
+      path: 'https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D9%84%D9%8A%D9%85_%D8%B9%D8%A7%D9%84 '
     },
     {
       id: 2,
@@ -40,6 +43,7 @@ const Blog = () => {
       date: "2024-01-10",
       category: "تطوير المهارات",
       readTime: "7 دقائق",
+      path: 'https://ar.wikipedia.org/wiki/%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D9%82%D8%B1%D9%86_%D8%A7%D9%84%D8%AD%D8%A7%D8%AF%D9%8A_%D9%88%D8%A7%D9%84%D8%B9%D8%B4%D8%B1%D9%8A%D9%86 '
     },
     {
       id: 3,
@@ -50,6 +54,7 @@ const Blog = () => {
       date: "2024-01-05",
       category: "التكنولوجيا",
       readTime: "10 دقائق",
+      path: 'https://ar.wikipedia.org/wiki/%D8%B0%D9%83%D8%A7%D8%A1_%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A '
     },
     {
       id: 4,
@@ -60,6 +65,7 @@ const Blog = () => {
       date: "2024-01-01",
       category: "البحث عن عمل",
       readTime: "6 دقائق",
+      path: 'https://ar.wikipedia.org/wiki/%D9%85%D9%82%D8%A7%D8%A8%D9%84%D8%A9_%D8%B9%D9%85%D9%84 '
     },
     {
       id: 5,
@@ -70,6 +76,7 @@ const Blog = () => {
       date: "2023-12-28",
       category: "ريادة الأعمال",
       readTime: "8 دقائق",
+      path: 'https://ar.wikipedia.org/wiki/%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9_%D8%A3%D8%B9%D9%85%D8%A7%D9%84 '
     },
     {
       id: 6,
@@ -80,6 +87,7 @@ const Blog = () => {
       date: "2023-12-25",
       category: "التطوير الشخصي",
       readTime: "9 دقائق",
+      path: 'https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AA%D8%AE%D8%B7%D9%8A%D8%B7_%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A '
     },
   ];
 
@@ -161,7 +169,7 @@ const Blog = () => {
                     </div>
                   </div>
                   <Button variant="link" className="p-0 h-auto text-primary">
-                    اقرأ المزيد
+                    <Link to={post.path} target="_blank">لمعرفة المزيد</Link>
                     <ArrowRight className="mr-2 h-4 w-4" />
                   </Button>
                 </CardContent>
@@ -184,7 +192,6 @@ const Blog = () => {
                 الإلكتروني
               </p>
 
-              {/* ✅ تعديل هنا */}
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input
                   type="email"

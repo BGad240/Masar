@@ -240,22 +240,7 @@ const Footer = () => {
                       المدونة
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      to="/faq"
-                      className="text-sm text-muted-foreground hover:text-primary"
-                    >
-                      الأسئلة الشائعة
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/privacy"
-                      className="text-sm text-muted-foreground hover:text-primary"
-                    >
-                      سياسة الخصوصية
-                    </Link>
-                  </li>
+                  
                 </ul>
               </AccordionContent>
             </AccordionItem>
@@ -270,7 +255,7 @@ const Footer = () => {
                   </li>
                   <li className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Phone className="h-5 w-5 text-primary" />{" "}
-                    <span dir="ltr">+966 XX XXX XXXX</span>
+                    <span dir="ltr">+966503688026</span>
                   </li>
                   <li className="flex items-center gap-2 text-sm text-muted-foreground">
                     <MapPin className="h-5 w-5 text-primary" /> الرياض، المملكة

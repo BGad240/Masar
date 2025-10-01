@@ -199,7 +199,7 @@ const Careers = () => {
                       <div className="text-sm text-muted-foreground mb-2">المهارات المطلوبة:</div>
                       <div className="flex flex-wrap gap-2">
                         {career.skills.map((skill, index) => (
-                          <Badge key={index} variant="secondary" className="bg-primary/10 text-primary">
+                          <Badge key={index} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary hover:text-white">
                             {skill}
                           </Badge>
                         ))}

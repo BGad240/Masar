@@ -7,12 +7,12 @@ import "swiper/css/pagination";
 
 const slides = [
   {
-    img: "/child.jpg",
+    img: "/child2.jpg",
     title: "تعليم أفضل لمستقبل مشرق",
     desc: "نوفر بيئة تعليمية حديثة تدعم إبداع الطلاب.",
   },
   {
-    img: "/child2.jpg",
+    img: "/child.jpg",
     title: "أنشطة ترفيهية متنوعة",
     desc: "التعليم مع المتعة يصنع الفارق.",
   },
@@ -29,7 +29,7 @@ const Hero = () => {
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
-        autoplay={{ delay: 8000, disableOnInteraction: false }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         modules={[Autoplay, Pagination]}
         className="w-full h-full"

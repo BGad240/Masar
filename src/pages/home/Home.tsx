@@ -122,7 +122,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 hero-gradient">
+      <section className="py-20 bg-[#007BA7]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             هل أنت مستعد لاكتشاف مسارك؟

@@ -222,7 +222,7 @@ const CareerQuiz = () => {
         className="relative h-64 bg-cover bg-center mb-12"
         style={{ backgroundImage: `url(${quizBanner})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/90 flex items-center justify-center">
+        <div className="absolute inset-0 bg-[#007BA7]flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               اختبار المسار المهني

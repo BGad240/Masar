@@ -205,7 +205,7 @@ const CareerQuiz = () => {
                   إعادة الاختبار
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <Link href="/careers">استكشف المهن بالتفصيل</Link>
+                  <Link to="/careers">استكشف المهن بالتفصيل</Link>
                 </Button>
               </div>
             </CardContent>

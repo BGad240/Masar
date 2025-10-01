@@ -27,7 +27,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src={logo} alt="Masar Al-Mustaqbal" className="h-10 w-10" />
+            <img src='/moe-l.png' alt="Masar Al-Mustaqbal" className="h-12 w-12" />
             <div className="flex flex-col">
               <span className="font-bold text-lg text-primary">مسار المستقبل</span>
               <span className="text-xs text-muted-foreground">Masar Al-Mustaqbal</span>

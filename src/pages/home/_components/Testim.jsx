@@ -49,8 +49,8 @@ export default function TestimonialsSlider() {
               exit={{ opacity: 0, y: -40 }}
               transition={{ duration: 0.6 }}
             >
-              <Card className="shadow-xl rounded-3xl bg-white border border-gray-100">
-                <CardContent className="py-6  flex flex-col items-center">
+              <Card className="shadow-xl  bg-white border border-gray-100">
+                <CardContent className="py-6  flex flex-col items-center rounded-3xl">
                   {/* صورة المستخدم (Avatar) */}
                   <img
                     src={testimonial.img}

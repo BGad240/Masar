@@ -29,7 +29,7 @@ const About = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 hero-gradient">
+      <section className="py-20 bg-[#007BA7]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white mb-6 animate-fade-in-up">
             من نحن
@@ -120,7 +120,7 @@ const About = () => {
       </section>
 
       {/* Stats Section */}
-          <section className="py-20 hero-gradient">
+          <section className="py-20 bg-[#007BA7]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center text-white">
           <div>

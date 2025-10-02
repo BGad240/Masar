@@ -63,13 +63,17 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <img 
-                src={aboutImage} 
-                alt="Our Team" 
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
-            </div>
+            <div className="relative rounded-lg overflow-hidden shadow-xl">
+  <img 
+    src="/aboutMain.jpg" 
+    alt="Our Team" 
+    className="w-full h-auto object-cover"
+  />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+  </div>
+</div>
+
           </div>
         </div>
       </section>

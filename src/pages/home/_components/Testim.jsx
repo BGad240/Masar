@@ -9,19 +9,19 @@ const testimonials = [
     name: "أحمد المالكي",
     role: "طالب جامعي",
     quote: "ساعدني مسار المستقبل في اختيار تخصصي الجامعي بثقة كاملة",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    img: "boy1.jpg",
   },
   {
     name: "سارة العتيبي",
     role: "خريجة ثانوية",
     quote: "اختبار المسار المهني كان دقيق جداً وأعطاني رؤية واضحة",
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    img: "woman.jpg",
   },
   {
     name: "محمد القحطاني",
     role: "محترف",
     quote: "استشارات مميزة ساعدتني في التحول المهني بنجاح",
-    img: "https://randomuser.me/api/portraits/men/85.jpg",
+    img: "boy-2.webp",
   },
 ];
 

@@ -27,7 +27,7 @@ const demoCards: CardItem[] = [
     id: 2,
     imageUrl:
       "/sup-3.jpg",
-    title: "مقياس الميول المهنية",
+    title: "الميول المهنية",
     description:
       "عرض جميع التقارير الشهرية والفصلية الخاصة بالطلاب مع إمكانية تحميلها وطباعتها بسهولة.",
     href: "https://docs.google.com/forms/d/e/1FAIpQLSd_Wej37xKcd7uoxhRk7eysi5htnXBSbM4EkmamcT9F2wIgpA/viewform",

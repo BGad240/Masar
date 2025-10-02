@@ -107,7 +107,7 @@ const FeaturesPage = () => {
 
     {/* بطاقة أدوات الموجه */}
     <Link
-      to="https://drive.google.com/file/d/1JywhvF32HuyFzryJkrEkiStBznf8GWSW/view"
+      to="https://drive.google.com/file/d/1FXZ5SoRvQP8pzHvVeMDKudFIXIzR40fL/view"
       target="_blank"
       className="block group"
     >
@@ -134,7 +134,7 @@ const FeaturesPage = () => {
 
     {/* بطاقة الأدلة */}
     <Link
-      to="https://drive.google.com/file/d/1FXZ5SoRvQP8pzHvVeMDKudFIXIzR40fL/view"
+      to="https://drive.google.com/file/d/1JywhvF32HuyFzryJkrEkiStBznf8GWSW/view"
       target="_blank"
       className="block group"
     >

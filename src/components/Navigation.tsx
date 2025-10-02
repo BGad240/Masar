@@ -11,13 +11,13 @@ const Navigation = () => {
     ar: [
       { name: "الرئيسية", path: "/" },
       { name: "ملف الطالب", path: "/student-profile" },
-      { name: "الموجه التعليمي", path: "/teacher-profile"},
+      { name: "موجه طلابي", path: "/teacher-profile"},
         { name: "ولي الأمر", path: "/parent-profile"},
       { name: "من نحن", path: "/about" },
       { name: "خدماتنا", path: "/services" },
       { name: "اختبار المسار", path: "/quiz" },
       { name: "دليل المهن", path: "/careers" },
-      { name: "المدونة", path: "/blog" },
+      { name: "المكتبة الرقمية", path: "/blog" },
       { name: "اتصل بنا", path: "/contact" },
     ],
   };

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import {
   ArrowRight,
   CheckCircle,
+  HelpingHand,
   Users,
   BookOpen,
   Target,
@@ -9,10 +10,10 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import heroImage from "@/assets/hero-path.jpg";
 import Hero from "./_components/Hero";
 import CountUp from "react-countup";
 import TestimonialsSlider from "./_components/Testim";
+import ParentFeatures from "../_components/FeaturesImagesCard";
 
 const Home = () => {
   const stats = [
@@ -55,6 +56,16 @@ const Home = () => {
       title: "استشارات احترافية",
       description: "احجز جلسة استشارية مع خبرائنا لتوجيه مسارك المهني",
       icon: Users,
+    },
+    {
+      title: "استشارات مهنية",
+      description: "احجز جلسة استشارية مع خبرائنا لتوجيه مسارك المهني",
+      icon: Users,
+    },
+    {
+      title: "دعم نفسي",
+      description: "احجز جلسة استشارية مع خبرائنا لتوجيه مسارك المهني",
+      icon: HelpingHand,
     },
   ];
 
@@ -120,6 +131,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <ParentFeatures />
 
       {/* CTA Section */}
       <section className="py-20 bg-[#007BA7]">

@@ -100,7 +100,7 @@ const Home = () => {
       <section className="py-20" id="about">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#547073] mb-4">
+            <h2 className="text-4xl font-bold text-[#044163ee] mb-4">
               خدماتنا المتميزة
             </h2>
             <p className="text-lg text-[#696969] max-w-2xl mx-auto">
@@ -146,7 +146,7 @@ const Home = () => {
           <Button
             size="lg"
             asChild
-            className="bg-white text-[#777373] hover:bg-white/90 shadow-lg"
+            className="bg-white text-[#9C9B9B] hover:bg-white/90 shadow-lg"
           >
             <Link to="/quiz">
               ابدأ الآن مجاناً
@@ -159,7 +159,7 @@ const Home = () => {
       {/* Testimonials Section */}
       <section className="py-20 bg-gradient-to-b from-white to-[#F5FAFB]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-[#638aa0] mb-6">
+          <h2 className="text-4xl font-bold text-[#00324D] mb-6">
             آراء المستخدمين
           </h2>
 

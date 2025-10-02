@@ -104,7 +104,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen pt-20 pb-20">
       {/* Hero Section */}
-      <section className="py-20 bg-[#007BA7]">
+      <section className="py-20 bg-[#7b8f9b]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white mb-6 animate-fade-in-up">
             المدونة

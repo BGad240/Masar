@@ -149,26 +149,26 @@ const StudentProfile: React.FC<StudentProfileProps> = ({
     >
       {/* Header */}
       {/* Header */}
-      <div className="flex flex-col md:flex-row items-center md:items-start mb-8 gap-6 bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-2xl shadow-lg">
+      <div className="flex flex-col md:flex-row items-center md:items-start mb-8 gap-6 bg-[#23598b60] p-6 rounded-2xl shadow-lg">
         <img
           src={student.avatar}
           alt="صورة الطالب"
-          className="w-36 h-36 rounded-full object-cover border-4 border-blue-400 shadow-md"
+          className="w-36 h-36 rounded-full object-cover border-4 border-[#b19d73a1] shadow-md"
         />
         <div className="flex-1 text-center md:text-left space-y-4">
-          <h2 className="text-3xl font-bold text-gray-800">{student.name}</h2>
+          <h2 className="text-3xl font-bold text-gray-700">{student.name}</h2>
 
           <div className="flex flex-col gap-3 text-gray-700">
             {/* الصف */}
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <Book className="w-5 h-5 text-blue-500" />
+              <Book className="w-5 h-5 text-[#0e5677]" />
               <span className="font-semibold">الصف:</span>
               <span>{student.grade}</span>
             </div>
 
             {/* الهاتف */}
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <Phone className="w-5 h-5 text-yellow-500" />
+              <Phone className="w-5 h-5 text-[#0e5677]" />
               <span className="font-semibold">الهاتف:</span>
               <span>{student.phone}</span>
             </div>
@@ -179,12 +179,12 @@ const StudentProfile: React.FC<StudentProfileProps> = ({
       {/* معلومات شخصية */}
       <div className="mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* بطاقة تاريخ الميلاد */}
-        <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-5 rounded-2xl shadow-md hover:shadow-xl transition flex items-center gap-4">
-          <div className="bg-blue-200 text-blue-700 p-3 rounded-full flex items-center justify-center">
+        <div className="bg-[#95a1ac60] p-5 rounded-2xl shadow-md hover:shadow-xl transition flex items-center gap-4">
+          <div className="bg-[#71a1cebd] text-[#245079] p-3 rounded-full flex items-center justify-center">
             <Cake className="w-6 h-6" />
           </div>
           <div>
-            <h3 className="text-blue-700 font-semibold text-lg">
+            <h3 className="text-[#245079] font-semibold text-lg">
               تاريخ الميلاد
             </h3>
             <p className="text-gray-700 font-medium mt-1">
@@ -194,23 +194,23 @@ const StudentProfile: React.FC<StudentProfileProps> = ({
         </div>
 
         {/* بطاقة العنوان */}
-        <div className="bg-gradient-to-r from-green-50 to-green-100 p-5 rounded-2xl shadow-md hover:shadow-xl transition flex items-center gap-4">
-          <div className="bg-green-200 text-green-700 p-3 rounded-full flex items-center justify-center">
+        <div className="bg-[#95a1ac60] p-5 rounded-2xl shadow-md hover:shadow-xl transition flex items-center gap-4">
+          <div className="bg-[#71a1cebd] text-[#245079] p-3 rounded-full flex items-center justify-center">
             <MapPin className="w-6 h-6" />
           </div>
           <div>
-            <h3 className="text-green-700 font-semibold text-lg">العنوان</h3>
+            <h3 className="text-[#245079] font-semibold text-lg">العنوان</h3>
             <p className="text-gray-700 font-medium mt-1">{student.address}</p>
           </div>
         </div>
 
         {/* بطاقة الجنس */}
-        <div className="bg-gradient-to-r from-purple-50 to-purple-100 p-5 rounded-2xl shadow-md hover:shadow-xl transition flex items-center gap-4">
-          <div className="bg-purple-200 text-purple-700 p-3 rounded-full flex items-center justify-center">
+        <div className="bg-[#95a1ac60] p-5 rounded-2xl shadow-md hover:shadow-xl transition flex items-center gap-4">
+          <div className="bg-[#71a1cebd] text-[#245079] p-3 rounded-full flex items-center justify-center">
             <User className="w-6 h-6" />
           </div>
           <div>
-            <h3 className="text-purple-700 font-semibold text-lg">الجنس</h3>
+            <h3 className="text-[#245079] font-semibold text-lg">الجنس</h3>
             <p className="text-gray-700 font-medium mt-1">{student.gender}</p>
           </div>
         </div>
@@ -218,13 +218,13 @@ const StudentProfile: React.FC<StudentProfileProps> = ({
 
       {/* الدرجات */}
 <div className="mb-8">
-  <h3 className="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 inline-block pb-1">
+  <h3 className="text-2xl font-bold text-[#243d63] mb-4 border-b-2 border-blue-300 inline-block pb-1">
     الدرجات
   </h3>
 
   <div className="mx-auto">
     <table className="min-w-full bg-white rounded-xl shadow-lg overflow-hidden text-center ">
-      <thead className="bg-blue-600 text-white">
+      <thead className="bg-[#243d63] text-white">
         <tr>
           <th className="px-6 py-3">المادة</th>
           <th className="px-6 py-3">الدرجة</th>
@@ -275,7 +275,7 @@ const StudentProfile: React.FC<StudentProfileProps> = ({
       <div className="text-center">
         <button
           onClick={printProfile}
-          className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-3 rounded-2xl hover:scale-105 transform transition-all shadow-lg"
+          className="bg-[#245079] text-white px-8 py-3 rounded-2xl hover:scale-105 transform transition-all shadow-lg"
         >
           طباعة التقرير الشخصي
         </button>

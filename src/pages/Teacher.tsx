@@ -49,15 +49,15 @@ const FeaturesPage = () => {
       <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8 space-y-8">
         {/* Header */}
         <header className="text-center mb-8">
-          <h1 className="text-2xl md:text-3xl font-bold text-[#20529e] mb-2">
-            ملف الموجه الطلابي
+          <h1 className="text-2xl md:text-3xl font-bold text-[#344c70] mb-2">
+            ملف الموجه الطلابي  
           </h1>
         </header>
 
         <div className="lg:grid lg:grid-cols-4 lg:gap-8">
           {/* العمود الجانبي */}
 <aside className="lg:col-span-1 mb-8 lg:mb-0">
-  <div className="bg-gradient-to-b from-blue-100 to-blue-50 p-6 rounded-3xl shadow-lg border border-blue-300 hover:shadow-xl transition-all space-y-6">
+  <div className="bg-[#3f556934] p-6 rounded-3xl shadow-lg border hover:shadow-xl transition-all space-y-6">
 
     {/* صورة واسم الموجه */}
     <div className="flex flex-col items-center text-center">
@@ -70,7 +70,7 @@ const FeaturesPage = () => {
       <h2 className="text-lg md:text-xl font-bold text-gray-800">
         أ. حمد القحطاني
       </h2>
-      <p className="text-xs md:text-sm text-blue-700 mb-4">
+      <p className="text-xs md:text-sm text-gray-800 mb-4">
         موجه طلابي | المرحلة الثانوية
       </p>
       <div className="w-16 md:w-20 h-[2px] bg-blue-300 my-3 rounded-full"></div>
@@ -80,7 +80,7 @@ const FeaturesPage = () => {
     <nav className="space-y-3">
       <a
         href="#profile-settings"
-        className="flex items-center text-sm md:text-base text-gray-800 hover:text-blue-700 transition p-3 rounded-xl hover:bg-blue-100 shadow-sm hover:shadow-md"
+        className="flex items-center text-sm md:text-base text-gray-800 transition p-3 rounded-xl hover:bg-blue-100 shadow-sm hover:shadow-md"
       >
         <Settings className="w-5 h-5 ml-3 text-blue-500" />
         إعدادات الملف الشخصي
@@ -100,7 +100,7 @@ const FeaturesPage = () => {
           <main className="lg:col-span-3 space-y-8">
             {/* لوحة التحكم السريعة */}
             <div>
-  <h2 className="text-xl font-bold text-indigo-700 mb-4">
+  <h2 className="text-xl font-bold text-[#3a586b] mb-4">
     لوحة التحكم السريعة
   </h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -111,7 +111,7 @@ const FeaturesPage = () => {
       target="_blank"
       className="block group"
     >
-      <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
+      <div className="bg-[#a9c8e4bd] rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
         <LayoutDashboard className="w-12 h-12 text-blue-700 mb-3 md:mb-0 md:ml-4 flex-shrink-0" />
         <div className="flex-1">
           <h3 className="text-base font-bold text-blue-900 mb-1">

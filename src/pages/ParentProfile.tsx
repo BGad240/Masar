@@ -31,7 +31,7 @@ const parentData: Parent = {
   name: "أ. عبد العزيز ال نايف",
   email: "parent@example.com",
   phone: "01012345678",
-  avatar: "https://via.placeholder.com/120",
+  avatar: "father.jpg",
   children: [
     {
       id: 1,

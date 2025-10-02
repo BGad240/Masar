@@ -62,7 +62,7 @@ const FeaturesPage = () => {
               <div className="flex flex-col items-center text-center">
                 {/* صورة Placeholder */}
                 <img
-                  src="https://via.placeholder.com/100"
+                  src="father.jpg"
                   alt="صورة الموجه"
                   className="w-24 h-24 rounded-full shadow-md mb-3 object-cover"
                 />

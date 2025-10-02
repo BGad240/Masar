@@ -33,7 +33,7 @@ const defaultStudent = {
   birthDate: "15 مارس 2014",
   address: "جدة , المملكة العربية السعودية",
   gender: "ذكر",
-  avatar: "ksa-st.jpg",
+  avatar: "kid-prof.jpg",
   attendance: {
     presentDays: 180,
     absentDays: 5,

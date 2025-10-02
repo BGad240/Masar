@@ -31,14 +31,14 @@ const parentData: Parent = {
   name: "أ. عبد العزيز ال نايف",
   email: "parent@example.com",
   phone: "01012345678",
-  avatar: "father.jpg",
+  avatar: "father-2.jpg",
   children: [
     {
       id: 1,
       name: "أحمد بن عبد العزيز",
       grade: "الثاني الثانوي",
       studentId: "1001",
-      avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+      avatar: "kid-prof.jpg",
       scores: [
         { subject: "الرياضيات", score: 95, grade: "ممتاز" },
         { subject: "الفيزياء", score: 88, grade: "جيد جدًا" },

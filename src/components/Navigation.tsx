@@ -12,6 +12,7 @@ const Navigation = () => {
       { name: "الرئيسية", path: "/" },
       { name: "ملف الطالب", path: "/student-profile" },
       { name: "الموجه التعليمي", path: "/teacher-profile"},
+        { name: "ولي الأمر", path: "/parent-profile"},
       { name: "من نحن", path: "/about" },
       { name: "خدماتنا", path: "/services" },
       { name: "اختبار المسار", path: "/quiz" },

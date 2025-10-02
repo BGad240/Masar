@@ -167,11 +167,6 @@ const StudentProfile: React.FC<StudentProfileProps> = ({
             </div>
 
             {/* الهاتف */}
-            <div className="flex items-center justify-center md:justify-start gap-3">
-              <Phone className="w-5 h-5 text-[#0e5677]" />
-              <span className="font-semibold">الهاتف:</span>
-              <span>{student.phone}</span>
-            </div>
           </div>
         </div>
       </div>

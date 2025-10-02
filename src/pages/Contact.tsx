@@ -57,8 +57,8 @@ const Contact = () => {
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">البريد الإلكتروني</h3>
                   <p className="text-muted-foreground mb-2">تواصل معنا عبر البريد</p>
-                  <a href="mailto:info@masarfuture.com" className="text-[#2c556d] hover:underline">
-                    info@masarfuture.com
+                  <a href="mailto:Aisha.r.Al5misi@gmail.com" className="text-[#2c556d] hover:underline">
+                    Aisha.r.Al5misi@gmail.com
                   </a>
                 </CardContent>
               </Card>
@@ -71,7 +71,7 @@ const Contact = () => {
                   <h3 className="text-lg font-semibold text-foreground mb-2">الهاتف</h3>
                   <p className="text-muted-foreground mb-2">اتصل بنا مباشرة</p>
                   <a href="tel:+966XXXXXXXX" className="text-[#2c556d] hover:underline" dir="ltr">
-                    +966 XX XXX XXXX
+                    +966503688026
                   </a>
                 </CardContent>
               </Card>

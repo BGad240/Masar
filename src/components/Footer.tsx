@@ -143,7 +143,7 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">تواصل معنا</h3>
             <ul className="space-y-4">
               <li className="flex items-center gap-2 text-sm text-white">
-                <Mail className="h-5 w-5 text-white" /> info@masarfuture.com
+                <Mail className="h-5 w-5 text-white" /> Aisha.r.Al5misi@gmail.com
               </li>
               <li className="flex items-center gap-2 text-sm text-white">
                 <Phone className="h-5 w-5 text-white" />{" "}
@@ -251,7 +251,7 @@ const Footer = () => {
                 <ul className="space-y-4">
                   <li className="flex items-center gap-2 text-sm text-white">
                     <Mail className="h-5 w-5 text-white" />{" "}
-                    info@masarfuture.com
+                    Aisha.r.Al5misi@gmail.com
                   </li>
                   <li className="flex items-center gap-2 text-sm text-white">
                     <Phone className="h-5 w-5 text-white" />{" "}

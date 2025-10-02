@@ -16,7 +16,7 @@ const demoCards: CardItem[] = [
   {
     id: 1,
     imageUrl:
-      "/child.jpg",
+      "/support.jpg",
     title: "محادثات فورية امنة",
     description:
       "التواصل على مدار الساعة لحل كل مشكلات الطالب ومساعدته على التطور لحظة بلحظة",
@@ -26,7 +26,7 @@ const demoCards: CardItem[] = [
   {
     id: 2,
     imageUrl:
-      "/child.jpg",
+      "/sup-3.jpg",
     title: "مقياس الميول المهنية",
     description:
       "عرض جميع التقارير الشهرية والفصلية الخاصة بالطلاب مع إمكانية تحميلها وطباعتها بسهولة.",
@@ -36,8 +36,8 @@ const demoCards: CardItem[] = [
   {
     id: 3,
     imageUrl:
-      "/child.jpg",
-    title: "مقاييس نفسية",
+      "/sup-2.jpg",
+    title: "دعم نفسي",
     description:
       "تقديم استشارات ودعم نفسي واجتماعي لمساعدة الأبناء في التغلب على التحديات الدراسية والشخصية.",
     href: "https://www.moh.gov.sa/HealthAwareness/MedicalTools/Pages/Anxiety.aspx?utm_source=chatgpt.com",

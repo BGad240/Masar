@@ -25,7 +25,7 @@ type StudentProfileProps = {
 };
 
 const defaultStudent = {
-  name: "محمد مصطفى أحمد",
+  name: "أحمد بن عبد العزيز",
   grade: "الثاني الابتدائي",
   studentId: "12345",
   email: "mohamed@example.com",

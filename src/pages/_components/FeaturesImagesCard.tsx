@@ -19,7 +19,7 @@ const demoCards: CardItem[] = [
       "/child.jpg",
     title: "محادثات فورية امنة",
     description:
-      "خطة شاملة تساعد ولي الأمر على متابعة مراحل تطور الطالب أكاديمياً وسلوكياً مع خطوات عملية للتنفيذ.",
+      "التواصل على مدار الساعة لحل كل مشكلات الطالب ومساعدته على التطور لحظة بلحظة",
     href: "https://t.me/masarmawjatalmustaqbalBot",
     targetBlank: true,
   },
@@ -74,7 +74,7 @@ const ParentFeatures = () => {
 
               <Link
                 to={card.href}
-                className="mt-4 inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition"
+                className="mt-4 inline-flex items-center text-[#a6a6a6] font-semibold hover:text-[#44828f] transition"
               >
                 تعرف أكثر
                 <motion.span

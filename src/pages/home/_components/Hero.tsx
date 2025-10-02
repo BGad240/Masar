@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 const slides = [
   {
-    img: "/saudi-st.jpg",
+    img: "/s;-3.jpg",
     title: "تعليم أفضل لمستقبل مشرق",
     desc: "نوفر بيئة تعليمية حديثة تدعم إبداع الطلاب.",
   },

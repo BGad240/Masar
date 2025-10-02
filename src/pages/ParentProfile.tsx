@@ -28,14 +28,14 @@ type Parent = {
 };
 
 const parentData: Parent = {
-  name: "أ. محمد مصطفى",
+  name: "أ. عبد العزيز ال نايف",
   email: "parent@example.com",
   phone: "01012345678",
   avatar: "https://via.placeholder.com/120",
   children: [
     {
       id: 1,
-      name: "أحمد محمد",
+      name: "أحمد بن عبد العزيز",
       grade: "الثاني الثانوي",
       studentId: "1001",
       avatar: "https://randomuser.me/api/portraits/men/75.jpg",
@@ -51,7 +51,7 @@ const parentData: Parent = {
     },
     {
       id: 2,
-      name: "سارة مصطفى",
+      name: "خدبجة بنت عبد العزيز",
       grade: "الأول الثانوي",
       studentId: "1002",
       avatar: "https://randomuser.me/api/portraits/women/65.jpg",

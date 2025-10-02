@@ -82,10 +82,10 @@ const Home = () => {
             {stats.map((stat, index) => (
               <Card key={index} className="text-center card-hover">
                 <CardContent className="p-6">
-                  <stat.icon className="h-8 w-8 text-[#ADD8E1] mx-auto mb-3" />
-                  <div className="text-3xl font-bold text-[#007BA7] mb-1">
+                  <stat.icon className="h-8 w-8 text-[#a8b5ac] mx-auto mb-3" />
+                  <div className="text-3xl font-bold text-[#547073] mb-1">
                     <CountUp start={0} end={stat.value} duration={4} />
-                    <span>{stat.sign}</span>
+                    <span className="text-[#547073]">{stat.sign}</span>
                   </div>
                   <div className="text-sm text-muted-foreground">
                     {stat.label}
@@ -100,7 +100,7 @@ const Home = () => {
       <section className="py-20" id="about">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#007BA7] mb-4">
+            <h2 className="text-4xl font-bold text-[#547073] mb-4">
               خدماتنا المتميزة
             </h2>
             <p className="text-lg text-[#696969] max-w-2xl mx-auto">
@@ -114,8 +114,8 @@ const Home = () => {
               <Card key={index} className="card-hover">
                 <CardContent className="p-8 text-center">
                   {/* الأيقونة */}
-                  <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
-                    <feature.icon className="h-7 w-7 text-primary" />
+                  <div className="h-14 w-14 rounded-lg bg-primary/5 flex items-center justify-center mb-4 mx-auto">
+                    <feature.icon className="h-7 w-7 text-[#a8b5ac]" />
                   </div>
 
                   {/* العنوان */}
@@ -135,7 +135,7 @@ const Home = () => {
       <ParentFeatures />
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#007BA7]">
+      <section className="py-20 bg-[#7b8f9b]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             هل أنت مستعد لاكتشاف مسارك؟
@@ -146,7 +146,7 @@ const Home = () => {
           <Button
             size="lg"
             asChild
-            className="bg-white text-primary hover:bg-white/90 shadow-lg"
+            className="bg-white text-[#777373] hover:bg-white/90 shadow-lg"
           >
             <Link to="/quiz">
               ابدأ الآن مجاناً
@@ -159,7 +159,7 @@ const Home = () => {
       {/* Testimonials Section */}
       <section className="py-20 bg-gradient-to-b from-white to-[#F5FAFB]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-[#00324D] mb-6">
+          <h2 className="text-4xl font-bold text-[#638aa0] mb-6">
             آراء المستخدمين
           </h2>
 

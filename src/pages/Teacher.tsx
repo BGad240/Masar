@@ -45,7 +45,7 @@ const FeaturesPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 md:p-8 my-[30px]" dir="rtl">
+    <div className="min-h-screen bg-gray-50 p-4 md:p-8 my-[45px]" dir="rtl">
       <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8 space-y-8">
         {/* Header */}
         <header className="text-center mb-8">

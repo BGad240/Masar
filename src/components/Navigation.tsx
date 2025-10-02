@@ -25,14 +25,14 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname == path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#546f7a] backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img src='/moe-l.png' alt="Masar Al-Mustaqbal" className="h-12 w-12" />
             <div className="flex flex-col">
-              <span className="font-bold text-lg text-primary">مسار المستقبل</span>
+              <span className="font-bold text-lg text-white">مسار المستقبل</span>
               <span className="text-xs text-muted-foreground">Masar Al-Mustaqbal</span>
             </div>
           </Link>
@@ -43,9 +43,9 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-medium transition-colors hover:text-white ${
                   isActive(item.path)
-                    ? "text-primary border-b-2 border-primary pb-1"
+                    ? "text-white border-b-2 border-white pb-1"
                     : "text-foreground"
                 }`}
               >
@@ -85,9 +85,9 @@ const Navigation = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`text-sm font-medium transition-colors hover:text-primary px-4 py-2 rounded-md ${
+                  className={`text-sm font-medium transition-colors hover:text-white px-4 py-2 rounded-md ${
                     isActive(item.path)
-                      ? "text-primary bg-accent"
+                      ? "text-white bg-accent"
                       : "text-foreground"
                   }`}
                 >

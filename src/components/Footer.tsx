@@ -20,7 +20,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-card border-t border-border mt-20">
+    <footer className="bg-[#546f7a] border-t border-border mt-20 text-white">
       <div className="container mx-auto px-4 py-12">
         {/* ✅ Desktop Grid + Mobile Accordion */}
         <div className="hidden md:grid grid-cols-4 gap-10 text-start">
@@ -33,28 +33,28 @@ const Footer = () => {
                 className="h-14 w-14"
               />
               <div className="flex flex-col">
-                <span className="font-bold text-lg text-primary">
+                <span className="font-bold text-lg text-white">
                   مسار المستقبل
                 </span>
-                <span className="text-xs text-muted-foreground">
+                <span className="text-xs text-white">
                   Masar Al-Mustaqbal
                 </span>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground mb-4 max-w-xs">
+            <p className="text-sm text-white mb-4 max-w-xs">
               منصة احترافية لإرشاد الشباب العربي نحو مستقبل مهني مشرق
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="#" className="text-white hover:text-white">
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="#" className="text-white hover:text-white">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="#" className="text-white hover:text-white">
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="#" className="text-white hover:text-white">
                 <Linkedin className="h-6 w-6" />
               </a>
             </div>
@@ -67,7 +67,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-sm text-muted-foreground hover:text-primary"
+                  className="text-sm text-white hover:text-white"
                 >
                   الرئيسية
                 </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
-                  className="text-sm text-muted-foreground hover:text-primary"
+                  className="text-sm text-white hover:text-white"
                 >
                   من نحن
                 </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-sm text-muted-foreground hover:text-primary"
+                  className="text-sm text-white hover:text-white"
                 >
                   خدماتنا
                 </Link>
@@ -91,7 +91,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/quiz"
-                  className="text-sm text-muted-foreground hover:text-primary"
+                  className="text-sm text-white hover:text-white"
                 >
                   اختبار المسار
                 </Link>
@@ -106,7 +106,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/careers"
-                  className="text-sm text-muted-foreground hover:text-primary"
+                  className="text-sm text-white hover:text-white"
                 >
                   دليل المهن
                 </Link>
@@ -114,7 +114,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/blog"
-                  className="text-sm text-muted-foreground hover:text-primary"
+                  className="text-sm text-white hover:text-white"
                 >
                   المدونة
                 </Link>
@@ -122,7 +122,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/faq"
-                  className="text-sm text-muted-foreground hover:text-primary"
+                  className="text-sm text-white hover:text-white"
                 >
                   الأسئلة الشائعة
                 </Link>
@@ -130,7 +130,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/privacy"
-                  className="text-sm text-muted-foreground hover:text-primary"
+                  className="text-sm text-white hover:text-white"
                 >
                   سياسة الخصوصية
                 </Link>
@@ -142,15 +142,15 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-foreground mb-4">تواصل معنا</h3>
             <ul className="space-y-4">
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Mail className="h-5 w-5 text-primary" /> info@masarfuture.com
+              <li className="flex items-center gap-2 text-sm text-white">
+                <Mail className="h-5 w-5 text-white" /> info@masarfuture.com
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Phone className="h-5 w-5 text-primary" />{" "}
+              <li className="flex items-center gap-2 text-sm text-white">
+                <Phone className="h-5 w-5 text-white" />{" "}
                 <span dir="ltr">+966503688026</span>
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-5 w-5 text-primary" /> الرياض، المملكة
+              <li className="flex items-center gap-2 text-sm text-white">
+                <MapPin className="h-5 w-5 text-white" /> الرياض، المملكة
                 العربية السعودية
               </li>
             </ul>
@@ -167,15 +167,15 @@ const Footer = () => {
                 className="h-14 w-14"
               />
               <div className="flex flex-col">
-                <span className="font-bold text-lg text-primary">
+                <span className="font-bold text-lg text-white">
                   مسار المستقبل
                 </span>
-                <span className="text-xs text-muted-foreground">
+                <span className="text-xs text-white">
                   Masar Al-Mustaqbal
                 </span>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground mb-4 max-w-xs">
+            <p className="text-sm text-white mb-4 max-w-xs">
               منصة احترافية لإرشاد الشباب العربي نحو مستقبل مهني مشرق
             </p>
           </div>
@@ -187,7 +187,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-sm text-muted-foreground hover:text-primary"
+                      className="text-sm text-white hover:text-white"
                     >
                       الرئيسية
                     </Link>
@@ -195,7 +195,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/about"
-                      className="text-sm text-muted-foreground hover:text-primary"
+                      className="text-sm text-white hover:text-white"
                     >
                       من نحن
                     </Link>
@@ -203,7 +203,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/services"
-                      className="text-sm text-muted-foreground hover:text-primary"
+                      className="text-sm text-white hover:text-white"
                     >
                       خدماتنا
                     </Link>
@@ -211,7 +211,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/quiz"
-                      className="text-sm text-muted-foreground hover:text-primary"
+                      className="text-sm text-white hover:text-white"
                     >
                       اختبار المسار
                     </Link>
@@ -227,7 +227,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/careers"
-                      className="text-sm text-muted-foreground hover:text-primary"
+                      className="text-sm text-white hover:text-white"
                     >
                       دليل المهن
                     </Link>
@@ -235,7 +235,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/blog"
-                      className="text-sm text-muted-foreground hover:text-primary"
+                      className="text-sm text-white hover:text-white"
                     >
                       المدونة
                     </Link>
@@ -249,16 +249,16 @@ const Footer = () => {
               <AccordionTrigger>تواصل معنا</AccordionTrigger>
               <AccordionContent>
                 <ul className="space-y-4">
-                  <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Mail className="h-5 w-5 text-primary" />{" "}
+                  <li className="flex items-center gap-2 text-sm text-white">
+                    <Mail className="h-5 w-5 text-white" />{" "}
                     info@masarfuture.com
                   </li>
-                  <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Phone className="h-5 w-5 text-primary" />{" "}
+                  <li className="flex items-center gap-2 text-sm text-white">
+                    <Phone className="h-5 w-5 text-white" />{" "}
                     <span dir="ltr">+966503688026</span>
                   </li>
-                  <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <MapPin className="h-5 w-5 text-primary" /> الرياض، المملكة
+                  <li className="flex items-center gap-2 text-sm text-white">
+                    <MapPin className="h-5 w-5 text-white" /> الرياض، المملكة
                     العربية السعودية
                   </li>
                 </ul>
@@ -269,7 +269,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-border mt-10 pt-6 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-white">
             © {currentYear} مسار المستقبل. جميع الحقوق محفوظة.
           </p>
         </div>

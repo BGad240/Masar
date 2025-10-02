@@ -7,17 +7,17 @@ import "swiper/css/pagination";
 
 const slides = [
   {
-    img: "/child2.jpg",
+    img: "/saudi-st.jpg",
     title: "تعليم أفضل لمستقبل مشرق",
     desc: "نوفر بيئة تعليمية حديثة تدعم إبداع الطلاب.",
   },
   {
-    img: "/child.jpg",
+    img: "/sd-st1.jpeg",
     title: "أنشطة ترفيهية متنوعة",
     desc: "التعليم مع المتعة يصنع الفارق.",
   },
   {
-    img: "/child3.jpg",
+    img: "/last2.webp",
     title: "رعاية واهتمام",
     desc: "نهتم بتطوير مهارات الطفل في كل الجوانب.",
   },
@@ -45,7 +45,7 @@ const Hero = () => {
               />
 
               {/* Overlay متدرج أقوى */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#00324D]/75 via-[#00324D]/70"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#00324D]/60 via-[#00324D]/40"></div>
 
               {/* النصوص في النص */}
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 md:px-20">

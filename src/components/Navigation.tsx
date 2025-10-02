@@ -10,6 +10,7 @@ const Navigation = () => {
   const navItems = {
     ar: [
       { name: "الرئيسية", path: "/" },
+      { name: "ملف الطالب", path: "/student-profile" },
       { name: "من نحن", path: "/about" },
       { name: "خدماتنا", path: "/services" },
       { name: "اختبار المسار", path: "/quiz" },

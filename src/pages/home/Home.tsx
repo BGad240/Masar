@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import {
   ArrowRight,
   CheckCircle,
+  Handshake,
   HelpingHand,
   Users,
   BookOpen,
@@ -54,8 +55,8 @@ const Home = () => {
     },
     {
       title: "استشارات احترافية",
-      description: "احجز جلسة استشارية مع خبرائنا لتوجيه مسارك المهني",
-      icon: Users,
+      description: "نوفر لك الخبرات المتراكمة من خلال التعليم والممارسة المستمران",
+      icon: Handshake ,
     },
     {
       title: "استشارات مهنية",

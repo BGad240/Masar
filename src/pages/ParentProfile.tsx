@@ -35,7 +35,7 @@ const parentData: Parent = {
   children: [
     {
       id: 1,
-      name: "أحمد بن عبد العزيز",
+      name: "أحمد عبد الله الزهراني",
       grade: "الثاني الثانوي",
       studentId: "1001",
       avatar: "kid-prof.jpg",

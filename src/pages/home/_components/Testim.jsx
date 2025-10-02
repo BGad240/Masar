@@ -21,7 +21,7 @@ const testimonials = [
     name: "محمد القحطاني",
     role: "محترف",
     quote: "استشارات مميزة ساعدتني في التحول المهني بنجاح",
-    img: "boy-2.webp",
+    img: "teacher-tes.jpg",
   },
 ];
 

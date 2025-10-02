@@ -97,12 +97,12 @@ const About = () => {
             </div>
             <div className="relative rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/aboutMain.jpg"
+                src="/about.jpg"
                 alt="Our Team"
                 className="w-full h-auto object-cover"
               />
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"></div>
+              <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center"></div>
             </div>
           </div>
         </div>

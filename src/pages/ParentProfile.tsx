@@ -51,10 +51,10 @@ const parentData: Parent = {
     },
     {
       id: 2,
-      name: "خدبجة بنت عبد العزيز",
+      name: "وجد عبد الله الزهراني",
       grade: "الأول الثانوي",
       studentId: "1002",
-      avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+      avatar: "daughter.jpg",
       scores: [
         { subject: "اللغة العربية", score: 90, grade: "ممتاز" },
         { subject: "اللغة الإنجليزية", score: 85, grade: "جيد جدًا" },

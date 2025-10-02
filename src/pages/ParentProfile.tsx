@@ -161,17 +161,16 @@ const ParentDashboard: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-4 md:p-8 my-[45px]" dir="rtl">
       {/* بطاقة ولي الأمر */}
-      <div className="max-w-5xl mx-auto bg-gradient-to-r from-blue-50 to-blue-100 p-5 md:p-6 rounded-2xl shadow-lg flex flex-col sm:flex-row items-center sm:items-start gap-5 mb-6">
+      <div className="max-w-5xl mx-auto bg-[#23598b60] p-5 md:p-6 rounded-2xl shadow-lg flex flex-col sm:flex-row items-center sm:items-start gap-5 mb-6">
         <img
           src={parentData.avatar}
           alt="ولي الأمر"
-          className="w-28 h-28 rounded-full shadow-md object-cover border-2 border-blue-300"
+          className="w-28 h-28 rounded-full shadow-md object-cover border-4 border-[#b19d73a1]"
         />
         <div className="flex-1 space-y-2 text-center sm:text-right">
-          <h1 className="text-2xl font-bold text-blue-800">{parentData.name}</h1>
+          <h1 className="text-2xl font-bold text-[#234463]">{parentData.name}</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-700 text-sm">
             <p><strong>البريد الإلكتروني:</strong> {parentData.email}</p>
-            <p><strong>الهاتف:</strong> {parentData.phone}</p>
             <p><strong>عدد الأبناء:</strong> {parentData.children.length}</p>
           </div>
         </div>
@@ -190,8 +189,8 @@ const ParentDashboard: React.FC = () => {
           onClick={() => setSelectedChild("all")}
           className={`flex-1 py-2 rounded-xl font-semibold transition text-sm ${
             selectedChild === "all"
-              ? "bg-blue-600 text-white"
-              : "bg-white text-blue-600 shadow hover:shadow-md"
+              ? "bg-[#243d63] text-white"
+              : "bg-white text-[#243d63] shadow hover:shadow-md"
           }`}
         >
           تقرير شامل لجميع الأبناء
@@ -203,8 +202,8 @@ const ParentDashboard: React.FC = () => {
             onClick={() => setSelectedChild(child)}
             className={`flex-1 py-2 rounded-xl font-semibold transition text-sm ${
               selectedChild !== "all" && selectedChild.id === child.id
-                ? "bg-blue-600 text-white"
-                : "bg-white text-blue-600 shadow hover:shadow-md"
+                ? "bg-[#243d63] text-white"
+                : "bg-white text-[#243d63] shadow hover:shadow-md"
             }`}
           >
             {child.name}
@@ -221,10 +220,10 @@ const ParentDashboard: React.FC = () => {
             className="bg-white rounded-xl shadow-md p-4"
           >
             <div className="flex justify-between items-center mb-3">
-              <h2 className="text-lg font-bold text-blue-700">{child.name} - تقرير شامل</h2>
+              <h2 className="text-lg font-bold text-[#243d63]">{child.name} - تقرير شامل</h2>
               <button
                 onClick={() => printReport(child)}
-                className="flex items-center gap-1 bg-blue-600 text-white px-3 py-1 rounded-md hover:bg-blue-700 transition text-sm"
+                className="flex items-center gap-1 bg-[#243d63] text-white px-3 py-1 rounded-md transition text-sm"
               >
                 <Printer className="w-4 h-4" /> طباعة
               </button>
@@ -232,13 +231,13 @@ const ParentDashboard: React.FC = () => {
 
             {/* الدرجات */}
             <div className="mb-3">
-              <h3 className="text-base font-bold text-blue-600 flex items-center gap-1">
+              <h3 className="text-base font-bold text-[#243d63] flex items-center gap-1">
                 <Book className="w-4 h-4" /> الدرجات
               </h3>
               <div className="overflow-x-auto">
                 <table className="min-w-full border border-gray-200 text-gray-700 text-sm">
                   <thead>
-                    <tr className="bg-blue-600 text-white">
+                    <tr className="bg-[#243d63]  text-white">
                       <th className="px-3 py-1">المادة</th>
                       <th className="px-3 py-1">الدرجة</th>
                       <th className="px-3 py-1">التقدير</th>
@@ -260,13 +259,13 @@ const ParentDashboard: React.FC = () => {
             {/* الحضور */}
             <div className="flex flex-col md:flex-row gap-3 mb-3 text-center">
               <div className="bg-gray-100 flex-1 p-2 rounded-xl shadow text-sm">
-                <h3 className="text-blue-600 font-semibold mb-1 flex items-center justify-center gap-1">
+                <h3 className="text-[#243d63] font-semibold mb-1 flex items-center justify-center gap-1">
                   <Calendar className="w-4 h-4" /> الأيام الحاضرة
                 </h3>
                 <p className="text-gray-700 font-bold">{child.attendance.presentDays} يوم</p>
               </div>
               <div className="bg-gray-100 flex-1 p-2 rounded-xl shadow text-sm">
-                <h3 className="text-blue-600 font-semibold mb-1 flex items-center justify-center gap-1">
+                <h3 className="text-[#243d63] font-semibold mb-1 flex items-center justify-center gap-1">
                   <Calendar className="w-4 h-4" /> الأيام الغائبة
                 </h3>
                 <p className="text-gray-700 font-bold">{child.attendance.absentDays} يوم</p>
@@ -293,7 +292,7 @@ const ParentDashboard: React.FC = () => {
 
             {/* الأنشطة */}
             <div className="mt-3">
-              <h3 className="text-base font-bold text-blue-600 mb-1">الأنشطة والنماذج</h3>
+              <h3 className="text-base font-bold text-[#243d63] mb-1">الأنشطة والنماذج</h3>
               <ul className="list-disc list-inside text-gray-700 text-sm">
                 {child.activities.map((act, idx) => (
                   <li key={idx}>{act}</li>

@@ -50,122 +50,139 @@ const FeaturesPage = () => {
         {/* Header */}
         <header className="text-center mb-8">
           <h1 className="text-2xl md:text-3xl font-bold text-[#344c70] mb-2">
-            ملف الموجه الطلابي  
+            ملف الموجه الطلابي
           </h1>
         </header>
 
         <div className="lg:grid lg:grid-cols-4 lg:gap-8">
           {/* العمود الجانبي */}
-<aside className="lg:col-span-1 mb-8 lg:mb-0">
-  <div className="bg-[#3f556934] p-6 rounded-3xl shadow-lg border hover:shadow-xl transition-all space-y-6">
+          <aside className="lg:col-span-1 mb-8 lg:mb-0">
+            <div className="bg-[#3f556934] p-6 rounded-3xl shadow-lg border hover:shadow-xl transition-all space-y-6">
+              {/* صورة واسم الموجه */}
+              <div className="flex flex-col items-center text-center">
+                {/* صورة Placeholder */}
+                <img
+                  src="https://via.placeholder.com/100"
+                  alt="صورة الموجه"
+                  className="w-24 h-24 rounded-full shadow-md mb-3 object-cover"
+                />
+                <h2 className="text-lg md:text-xl font-bold text-gray-800">
+                  أ. حمد القحطاني
+                </h2>
+                <p className="text-xs md:text-sm text-gray-800 mb-4">
+                  موجه طلابي | المرحلة الثانوية
+                </p>
+                <div className="w-16 md:w-20 h-[2px] bg-blue-300 my-3 rounded-full"></div>
+              </div>
 
-    {/* صورة واسم الموجه */}
-    <div className="flex flex-col items-center text-center">
-      {/* صورة Placeholder */}
-      <img
-        src="https://via.placeholder.com/100" 
-        alt="صورة الموجه"
-        className="w-24 h-24 rounded-full shadow-md mb-3 object-cover"
-      />
-      <h2 className="text-lg md:text-xl font-bold text-gray-800">
-        أ. حمد القحطاني
-      </h2>
-      <p className="text-xs md:text-sm text-gray-800 mb-4">
-        موجه طلابي | المرحلة الثانوية
-      </p>
-      <div className="w-16 md:w-20 h-[2px] bg-blue-300 my-3 rounded-full"></div>
-    </div>
-
-    {/* روابط سريعة */}
-    <nav className="space-y-3">
-      <a
-        href="#profile-settings"
-        className="flex items-center text-sm md:text-base text-gray-800 transition p-3 rounded-xl hover:bg-blue-100 shadow-sm hover:shadow-md"
-      >
-        <Settings className="w-5 h-5 ml-3 text-blue-500" />
-        إعدادات الملف الشخصي
-      </a>
-      <a
-        href="#contact-info"
-        className="flex items-center text-sm md:text-base text-gray-800 hover:text-blue-700 transition p-3 rounded-xl hover:bg-blue-100 shadow-sm hover:shadow-md"
-      >
-        <ClipboardList className="w-5 h-5 ml-3 text-blue-500" />
-        بيانات التواصل
-      </a>
-    </nav>
-  </div>
-</aside>
+              {/* روابط سريعة */}
+              <nav className="space-y-3">
+                <a
+                  href="#profile-settings"
+                  className="flex items-center text-sm md:text-base text-gray-800 transition p-3 rounded-xl hover:bg-blue-100 shadow-sm hover:shadow-md"
+                >
+                  <Settings className="w-5 h-5 ml-3 text-blue-500" />
+                  إعدادات الملف الشخصي
+                </a>
+                <a
+                  href="#contact-info"
+                  className="flex items-center text-sm md:text-base text-gray-800 hover:text-blue-700 transition p-3 rounded-xl hover:bg-blue-100 shadow-sm hover:shadow-md"
+                >
+                  <ClipboardList className="w-5 h-5 ml-3 text-blue-500" />
+                  بيانات التواصل
+                </a>
+              </nav>
+            </div>
+          </aside>
 
           {/* العمود الرئيسي */}
           <main className="lg:col-span-3 space-y-8">
             {/* لوحة التحكم السريعة */}
             <div>
-  <h2 className="text-xl font-bold text-[#3a586b] mb-4">
-    لوحة التحكم السريعة
-  </h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <h2 className="text-xl font-bold text-[#3a586b] mb-4">
+                لوحة التحكم السريعة
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* بطاقة أدوات الموجه */}
+                <Link
+                  to="https://drive.google.com/file/d/1FXZ5SoRvQP8pzHvVeMDKudFIXIzR40fL/view"
+                  target="_blank"
+                  className="block group"
+                >
+                  <div className="bg-[#a9c8e4bd] rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
+                    <LayoutDashboard className="w-12 h-12 text-blue-700 mb-3 md:mb-0 md:ml-4 flex-shrink-0" />
+                    <div className="flex-1">
+                      <h3 className="text-base font-bold text-blue-900 mb-1">
+                        أدوات الموجه (الداشبورد)
+                      </h3>
+                      <p className="text-gray-600 text-xs md:text-sm mb-3">
+                        متابعة السجلات، جدولة اللقاءات، وإدارة الفعاليات
+                        اليومية.
+                      </p>
+                      {/* أيقونة الذهاب */}
+                      <div className="text-blue-700 flex items-center gap-1 text-sm font-semibold">
+                        الذهاب إلى
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
 
-    {/* بطاقة أدوات الموجه */}
-    <Link
-      to="https://drive.google.com/file/d/1FXZ5SoRvQP8pzHvVeMDKudFIXIzR40fL/view"
-      target="_blank"
-      className="block group"
-    >
-      <div className="bg-[#a9c8e4bd] rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
-        <LayoutDashboard className="w-12 h-12 text-blue-700 mb-3 md:mb-0 md:ml-4 flex-shrink-0" />
-        <div className="flex-1">
-          <h3 className="text-base font-bold text-blue-900 mb-1">
-            أدوات الموجه (الداشبورد)
-          </h3>
-          <p className="text-gray-600 text-xs md:text-sm mb-3">
-            متابعة السجلات، جدولة اللقاءات، وإدارة الفعاليات اليومية.
-          </p>
-          {/* أيقونة الذهاب */}
-          <div className="text-blue-700 flex items-center gap-1 text-sm font-semibold">
-            الذهاب إلى
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </Link>
-
-    {/* بطاقة الأدلة */}
-    <Link
-      to="https://drive.google.com/file/d/1JywhvF32HuyFzryJkrEkiStBznf8GWSW/view"
-      target="_blank"
-      className="block group"
-    >
-      <div className="bg-gradient-to-r from-cyan-50 to-cyan-100 rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
-        <ClipboardList className="w-12 h-12 text-cyan-700 mb-3 md:mb-0 md:ml-4 flex-shrink-0" />
-        <div className="flex-1">
-          <h3 className="text-base font-bold text-cyan-900 mb-1">
-            أدلة العمل الإرشادي
-          </h3>
-          <p className="text-gray-600 text-xs md:text-sm mb-3">
-            الخطوات التنفيذية والشروحات الموثقة للمهام الإرشادية.
-          </p>
-          {/* أيقونة الذهاب */}
-          <div className="text-cyan-700 flex items-center gap-1 text-sm font-semibold">
-            الذهاب إلى
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </Link>
-
-  </div>
-</div>
-
+                {/* بطاقة الأدلة */}
+                <Link
+                  to="https://drive.google.com/file/d/1JywhvF32HuyFzryJkrEkiStBznf8GWSW/view"
+                  target="_blank"
+                  className="block group"
+                >
+                  <div className="bg-[#a9c8e4bd] rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
+                    <ClipboardList className="w-12 h-12 text-cyan-700 mb-3 md:mb-0 md:ml-4 flex-shrink-0" />
+                    <div className="flex-1">
+                      <h3 className="text-base font-bold text-cyan-900 mb-1">
+                        أدلة العمل الإرشادي
+                      </h3>
+                      <p className="text-gray-600 text-xs md:text-sm mb-3">
+                        الخطوات التنفيذية والشروحات الموثقة للمهام الإرشادية.
+                      </p>
+                      {/* أيقونة الذهاب */}
+                      <div className="text-cyan-700 flex items-center gap-1 text-sm font-semibold">
+                        الذهاب إلى
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
 
             {/* الأقسام الرئيسية */}
             <div>
-              <h2 className="text-xl font-bold text-indigo-700 mb-4">
+              <h2 className="text-xl font-bold text-[#3a586b] mb-4">
                 الوصول السريع للأقسام
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">

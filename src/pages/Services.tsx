@@ -67,7 +67,7 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-[#007BA7]">
+      <section className="py-20 bg-[#7b8f9b]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white mb-6 animate-fade-in-up">
             خدماتنا
@@ -87,7 +87,7 @@ const Services = () => {
                 <CardHeader>
                   <div className="flex items-start gap-6">
                     <div className="h-16 w-16 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <service.icon className="h-8 w-8 text-primary" />
+                      <service.icon className="h-8 w-8 text-[#3376b49f]" />
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-3xl mb-2">{service.title}</CardTitle>
@@ -109,7 +109,7 @@ const Services = () => {
                       </ul>
                     </div>
                     <div className="flex items-center justify-center md:justify-end">
-                      <Button size="lg" asChild className="btn-gradient">
+                      <Button size="lg" asChild className="bg-[#245079]">
                         <Link to={service.link}>{service.buttonText}</Link>
                       </Button>
                     </div>
@@ -130,7 +130,7 @@ const Services = () => {
               <Card key={index} className="card-hover">
                 <CardContent className="p-8">
                   <div className="h-14 w-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <service.icon className="h-7 w-7 text-primary" />
+                    <service.icon className="h-7 w-7 text-[#3376b49f]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
                   <p className="text-muted-foreground">{service.description}</p>
@@ -144,13 +144,13 @@ const Services = () => {
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <Card className="bg-gradient-to-r from-primary to-secondary text-white">
+          <Card className="bg-[#7b8f9b] text-white">
             <CardContent className="p-12 text-center">
               <h2 className="text-4xl font-bold mb-6">هل أنت مستعد لبدء رحلتك المهنية؟</h2>
               <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
                 ابدأ الآن مع اختبار المسار المهني المجاني واحصل على توجيهات مخصصة
               </p>
-              <Button size="lg" variant="secondary" asChild>
+              <Button size="lg" className="bg-[#44526871] hover:bg-[#44526871]" asChild>
                 <Link to="/quiz">ابدأ الآن مجاناً</Link>
               </Button>
             </CardContent>

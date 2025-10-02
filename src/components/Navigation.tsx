@@ -11,6 +11,7 @@ const Navigation = () => {
     ar: [
       { name: "الرئيسية", path: "/" },
       { name: "ملف الطالب", path: "/student-profile" },
+      { name: "الموجه التعليمي", path: "/teacher-profile"},
       { name: "من نحن", path: "/about" },
       { name: "خدماتنا", path: "/services" },
       { name: "اختبار المسار", path: "/quiz" },

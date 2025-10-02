@@ -155,7 +155,7 @@ const Careers = () => {
                   key={category}
                   variant={selectedCategory === category ? "default" : "outline"}
                   onClick={() => setSelectedCategory(category)}
-                  className="whitespace-nowrap"
+                  className="whitespace-nowrap hover:bg-[#2c556d2c] hover:text-black"
                 >
                   {category}
                 </Button>

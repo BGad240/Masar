@@ -126,7 +126,7 @@ const Blog = () => {
               <Button
                 key={category}
                 variant="outline"
-                className="whitespace-nowrap"
+                className="hover:bg-[#2f546950] hover:text-gray-900"
               >
                 {category}
               </Button>
@@ -143,7 +143,7 @@ const Blog = () => {
               <Card key={post.id} className="card-hover flex flex-col">
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-3">
-                    <Badge variant="secondary">{post.category}</Badge>
+                    <Badge className="bg-[#2f5469]">{post.category}</Badge>
                     <span className="text-sm text-muted-foreground">
                       {post.readTime}
                     </span>
@@ -168,7 +168,7 @@ const Blog = () => {
                       </span>
                     </div>
                   </div>
-                  <Button variant="link" className="p-0 h-auto text-primary">
+                  <Button variant="link" className="p-0 h-auto text-[#2f5469]">
                     <Link to={post.path} target="_blank">لمعرفة المزيد</Link>
                     <ArrowRight className="mr-2 h-4 w-4" />
                   </Button>
@@ -198,7 +198,7 @@ const Blog = () => {
                   placeholder="بريدك الإلكتروني"
                   className="flex-1 px-4 py-2 rounded-md border border-border bg-background text-sm md:text-base"
                 />
-                <Button className="w-full sm:w-auto">اشترك الآن</Button>
+                <Button className="w-full sm:w-auto bg-[#2f5469] hover:bg-[#2f5469]">اشترك الآن</Button>
               </div>
             </CardContent>
           </Card>

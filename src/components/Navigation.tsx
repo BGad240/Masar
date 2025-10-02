@@ -25,7 +25,7 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname == path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#546f7a] backdrop-blur-sm border-b border-border shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#7c939c] backdrop-blur-sm  shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -33,7 +33,7 @@ const Navigation = () => {
             <img src='/moe-l.png' alt="Masar Al-Mustaqbal" className="h-12 w-12" />
             <div className="flex flex-col">
               <span className="font-bold text-lg text-white">مسار المستقبل</span>
-              <span className="text-xs text-muted-foreground">Masar Al-Mustaqbal</span>
+              <span className="text-xs ">Masar Al-Mustaqbal</span>
             </div>
           </Link>
 
@@ -52,14 +52,6 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button
-              variant="ghost"
-              size="icon"
-              className="ml-2"
-              aria-label="Toggle language"
-            >
-              <Globe className="h-5 w-5" />
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,7 +79,7 @@ const Navigation = () => {
                   onClick={() => setIsOpen(false)}
                   className={`text-sm font-medium transition-colors hover:text-white px-4 py-2 rounded-md ${
                     isActive(item.path)
-                      ? "text-white bg-accent"
+                      ? "text-foreground bg-accent"
                       : "text-foreground"
                   }`}
                 >

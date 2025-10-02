@@ -52,12 +52,12 @@ const Contact = () => {
             <div className="space-y-6">
               <Card className="card-hover">
                 <CardContent className="p-6">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <Mail className="h-6 w-6 text-primary" />
+                  <div className="h-12 w-12 rounded-lg bg-[#94a5af42] flex items-center justify-center mb-4">
+                    <Mail className="h-6 w-6 text-[#2c556dde]" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">البريد الإلكتروني</h3>
                   <p className="text-muted-foreground mb-2">تواصل معنا عبر البريد</p>
-                  <a href="mailto:info@masarfuture.com" className="text-primary hover:underline">
+                  <a href="mailto:info@masarfuture.com" className="text-[#2c556d] hover:underline">
                     info@masarfuture.com
                   </a>
                 </CardContent>
@@ -66,11 +66,11 @@ const Contact = () => {
               <Card className="card-hover">
                 <CardContent className="p-6">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <Phone className="h-6 w-6 text-primary" />
+                    <Phone className="h-6 w-6 text-[#2c556dde]" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">الهاتف</h3>
                   <p className="text-muted-foreground mb-2">اتصل بنا مباشرة</p>
-                  <a href="tel:+966XXXXXXXX" className="text-primary hover:underline" dir="ltr">
+                  <a href="tel:+966XXXXXXXX" className="text-[#2c556d] hover:underline" dir="ltr">
                     +966 XX XXX XXXX
                   </a>
                 </CardContent>
@@ -79,12 +79,12 @@ const Contact = () => {
               <Card className="card-hover">
                 <CardContent className="p-6">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <MapPin className="h-6 w-6 text-primary" />
+                    <MapPin className="h-6 w-6 text-[#2c556dde]" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">الموقع</h3>
                   <p className="text-muted-foreground mb-2">قم بزيارتنا</p>
                   <p className="text-foreground">
-                    الرياض، المملكة العربية السعودية
+                    جدة، المملكة العربية السعودية
                   </p>
                 </CardContent>
               </Card>
@@ -166,9 +166,9 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full md:w-auto">
+                    <Button type="submit" size="lg" className="w-full md:w-auto bg-[#2c556d]">
                       إرسال الرسالة
-                      <Send className="mr-2 h-4 w-4" />
+                      <Send className="mr-2 h-4 w-4 " />
                     </Button>
                   </form>
                 </CardContent>

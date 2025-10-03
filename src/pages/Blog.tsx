@@ -107,7 +107,7 @@ const Blog = () => {
       <section className="py-20 bg-[#7b8f9b]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white mb-6 animate-fade-in-up">
-            المدونة
+            المكتبة الرقمية
           </h1>
           <p
             className="text-xl text-white/90 max-w-3xl mx-auto animate-fade-in-up"

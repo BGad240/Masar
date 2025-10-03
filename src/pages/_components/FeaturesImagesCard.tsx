@@ -40,7 +40,7 @@ const demoCards: CardItem[] = [
     title: "دعم نفسي",
     description:
       "تقديم استشارات ودعم نفسي واجتماعي لمساعدة الأبناء في التغلب على التحديات الدراسية والشخصية.",
-    href: "https://www.moh.gov.sa/HealthAwareness/MedicalTools/Pages/Anxiety.aspx?utm_source=chatgpt.com",
+    href: "https://cdn1.get-qr.com/files/67db2c4457d1f762d790b0b6/1742416966663-d9ecabc7b04f3e988fb548b4da805b14.pdf ",
     targetBlank: true,
   },
 ];
@@ -74,6 +74,7 @@ const ParentFeatures = () => {
 
               <Link
                 to={card.href}
+                target="_blank"
                 className="mt-4 inline-flex items-center text-[#a6a6a6] font-semibold hover:text-[#44828f] transition"
               >
                 تعرف أكثر
